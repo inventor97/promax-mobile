@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#3e72ce</color>
+    <color name="primary_color_blur">#e63e72ce</color>
+    <color name="secondary_color">#ea7a2f</color>
+    <color name="primary_bkg_color">#e6274375</color>
+    <color name="third_color">#48ce3e</color>
+    <color name="mistaka_color">#d68474</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white85">#d9FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#8c000000</color>
+    <color name="sub_text_clor">#d2cdcd</color>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/rounded_border_shadow_white">
+
+        <TextView
+            android:id="@+id/his_subject_name"
+            style="@style/text"
+            android:layout_marginTop="10dp"
+            android:text="Ona tili"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <ImageView
+            android:id="@+id/open_history_data"
+            style="@style/back_icon_fill_mode"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_open_outline"
+            app:layout_constraintVertical_bias="0.85"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toEndOf="@+id/his_subject_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/correct_lb"
+            style="@style/text"
+            android:layout_marginTop="5dp"
+            android:text="Correct"
+            android:textColor="@color/third_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="@+id/his_subject_name"
+            app:layout_constraintTop_toBottomOf="@+id/his_subject_name"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/mistake_lb"
+            style="@style/text"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="Mistake"
+            android:textColor="@color/mistaka_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/correct_lb"
+            app:layout_constraintTop_toBottomOf="@+id/correct_lb" />
+
+        <TextView
+            android:id="@+id/correct_ans_count"
+            style="@style/sub_title_text_gray"
+            android:text="26"
+            app:layout_constraintBottom_toBottomOf="@+id/correct_lb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/correct_lb"
+            app:layout_constraintTop_toTopOf="@+id/correct_lb" />
+
+        <TextView
+            android:id="@+id/textView10"
+            style="@style/sub_title_text_gray"
+            android:text="@string/problems"
+            app:layout_constraintBottom_toBottomOf="@+id/correct_lb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toEndOf="@+id/correct_ans_count"
+            app:layout_constraintTop_toTopOf="@+id/correct_lb" />
+
+        <TextView
+            android:id="@+id/mistake_ans_count"
+            style="@style/sub_title_text_gray"
+            android:text="14"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="@+id/mistake_lb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/correct_ans_count"
+            app:layout_constraintTop_toTopOf="@+id/mistake_lb" />
+
+        <TextView
+            style="@style/sub_title_text_gray"
+            android:text="@string/problems"
+            app:layout_constraintBottom_toBottomOf="@+id/mistake_lb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/mistake_lb" />
+
+        <TextView
+            android:id="@+id/history_date"
+            style="@style/sub_title_text_gray"
+            android:text="25-05-2021"
+            app:layout_constraintBottom_toBottomOf="@+id/his_subject_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toEndOf="@+id/his_subject_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/more_rounded_border_fill"
+            app:layout_constraintBottom_toBottomOf="@+id/his_subject_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/his_subject_name"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
