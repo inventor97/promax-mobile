@@ -20,8 +20,8 @@
     <ImageView
         android:id="@+id/notification_btn_overview"
         style="@style/back_icon_mode"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:src="@drawable/ic_notifications_outline"
         app:layout_constraintVertical_bias="1"
         app:layout_constraintHorizontal_bias="0.95"
@@ -33,13 +33,13 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image_overview"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:src="@drawable/asd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintVertical_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintVertical_bias="0.03"
         app:layout_constraintStart_toStartOf="@+id/overview_title"
         app:layout_constraintTop_toBottomOf="@+id/overview_title" />
 
@@ -49,21 +49,21 @@
         android:text="Anvar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/profile_image_overview"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="@+id/profile_image_overview"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_image_overview"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0" />
 
     <TextView
         android:id="@+id/surename_overview"
         style="@style/title_regular_text"
         android:text="Samadov"
-        app:layout_constraintVertical_bias="0.01"
-        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/profile_image_overview"
-        app:layout_constraintStart_toStartOf="@+id/profile_image_overview"
-        app:layout_constraintTop_toBottomOf="@+id/name_overview" />
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/name_overview"
+        app:layout_constraintTop_toBottomOf="@+id/name_overview"
+        app:layout_constraintVertical_bias="0" />
 
     <TextView
         android:id="@+id/textView4"
@@ -71,32 +71,32 @@
         android:text="@string/success"
         app:layout_constraintBottom_toBottomOf="@+id/profile_image_overview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toEndOf="@+id/profile_image_overview"
         app:layout_constraintTop_toBottomOf="@+id/overview_title"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/passed_exams_count"
         style="@style/title_bold_text"
         android:text="32"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintVertical_bias="0.15"
         app:layout_constraintBottom_toBottomOf="@+id/profile_image_overview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/profile_image_overview"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/upoaded_exams_count"
         style="@style/title_bold_text"
         android:text="58"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintVertical_bias="0.1"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_image_overview"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/surename_overview"
+        app:layout_constraintEnd_toEndOf="@+id/passed_exams_count"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/passed_exams_count"
-        app:layout_constraintTop_toBottomOf="@+id/passed_exams_count" />
+        app:layout_constraintTop_toBottomOf="@+id/passed_exams_count"
+        app:layout_constraintVertical_bias="0." />
 
     <TextView
         android:id="@+id/textView5"
@@ -104,73 +104,78 @@
         android:text="@string/passed_exam"
         app:layout_constraintBottom_toBottomOf="@+id/passed_exams_count"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/passed_exams_count"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintTop_toTopOf="@+id/passed_exams_count"
+        app:layout_constraintVertical_bias="1" />
 
     <TextView
         android:id="@+id/textView8"
         style="@style/sub_title_text_gray"
         android:text="@string/uploaded_exam"
-        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintBottom_toBottomOf="@+id/upoaded_exams_count"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/upoaded_exams_count"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="1" />
 
     <TextView
         android:id="@+id/textView6"
         style="@style/sub_title_text_gray"
         android:text="@string/valet"
         app:layout_constraintBottom_toTopOf="@+id/name_overview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toEndOf="@+id/profile_image_overview"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.5" />
 
     <TextView
         android:id="@+id/valet_amount_overview"
         style="@style/title_bold_text"
         android:text="15,000"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintBottom_toBottomOf="@+id/name_overview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/name_overview"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="0" />
 
     <TextView
         android:id="@+id/textView7"
         style="@style/sub_title_text_gray"
         android:text="@string/your_ranking"
-        app:layout_constraintBottom_toTopOf="@+id/surename_overview"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/valet_amount_overview" />
+        app:layout_constraintTop_toBottomOf="@+id/valet_amount_overview"
+        app:layout_constraintVertical_bias="0.2" />
 
     <TextView
         android:id="@+id/ranking_overview"
         style="@style/title_bold_text"
         android:text="103"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintBottom_toBottomOf="@+id/surename_overview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/surename_overview"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/valet_amount_overview"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.05" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="570dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
         android:background="@drawable/more_rounded_border_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/surename_overview"
-        app:layout_constraintVertical_bias="0.0" >
+        app:layout_constraintVertical_bias="0.0">
 
 
         <TextView
@@ -187,23 +192,23 @@
         <ImageView
             android:id="@+id/sperator_title"
             android:layout_width="180dp"
-            android:layout_height="5dp"
-            android:background="@drawable/more_rounded_border_fill"
+            android:layout_height="3dp"
             android:layout_marginTop="5dp"
-            app:layout_constraintHorizontal_bias="0"
-            app:layout_constraintVertical_bias="0"
+            android:background="@drawable/more_rounded_border_fill"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
             app:layout_constraintStart_toStartOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintVertical_bias="0" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list"
             android:name="com.example.myapplication.historyFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
             app:layoutManager="LinearLayoutManager"
-            android:layout_marginTop="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sperator_title"

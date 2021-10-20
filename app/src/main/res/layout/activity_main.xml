@@ -12,6 +12,7 @@
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
+        app:itemTextAppearanceActive="@style/nav_active_title"
         android:background="@drawable/rounded_border_shadow_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

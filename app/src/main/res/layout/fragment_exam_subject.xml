@@ -13,7 +13,7 @@
         <TextView
             android:id="@+id/exam_subject"
             style="@style/text"
-            android:text="Matemtika"
+            android:text="Matematika"
             app:layout_constraintHorizontal_bias="0.05"
             android:layout_marginTop="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -58,7 +58,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:layout_width="300dp"
+            android:layout_width="200dp"
             android:layout_height="2dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/more_rounded_border_fill"
@@ -66,7 +66,7 @@
             app:layout_constraintEnd_toStartOf="@+id/exam_subject_next"
             app:layout_constraintStart_toEndOf="@+id/exam_subject"
             app:layout_constraintTop_toBottomOf="@+id/question_count"
-            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintHorizontal_bias="0"
             app:layout_constraintVertical_bias="1" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

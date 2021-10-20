@@ -33,9 +33,9 @@ public class splashActivity extends AppCompatActivity {
         pager = findViewById(R.id.liquid_pager);
         pagerAdt = new PagerAdapter(getSupportFragmentManager());
         pager.setAdapter(pagerAdt);
-        bkgImg.animate().translationX(2500).setDuration(2000).setStartDelay(4000);
-        imgLogo.animate().translationY(2600).setDuration(2000).setStartDelay(4000);
-        textLogo.animate().translationY(2600).setDuration(2000).setStartDelay(4000);
+        bkgImg.animate().translationX(-2500).setDuration(2000).setStartDelay(3000);
+        imgLogo.animate().translationY(2600).setDuration(2000).setStartDelay(2500);
+        textLogo.animate().translationY(2600).setDuration(2000).setStartDelay(2500);
     }
 
     private class PagerAdapter extends FragmentStatePagerAdapter {
