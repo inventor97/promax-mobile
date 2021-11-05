@@ -13,6 +13,7 @@
     <string name="sign_in_title">Hello Again! Welcome back</string>
     <string name="sign_in">Sign in</string>
     <string name="number">Phone Number or email</string>
+    <string name="phone_number">Phone Number</string>
     <string name="password">Password</string>
     <string name="forgot_pass"><u>Forget Password</u></string>
     <string name="sign_up_in_sign_in"><u>Sign Up</u></string>
@@ -56,7 +57,7 @@
     <string name="pocket">Your Pocket</string>
     <string name="about">About</string>
     <string name="surename">Surename</string>
-    <string name="region">region</string>
+    <string name="region">Region</string>
     <string name="change_pass">Change Password</string>
     <string name="random_exam">Random Exam</string>
     <string name="custom_exam">Custom Exam</string>
@@ -76,4 +77,16 @@
     <string name="correct_msg">answered correctly</string>
     <string name="mistakes_msg">answers are mistaken</string>
     <string name="start">Start</string>
+    <string name="your_wallet">Your Wallet:</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="see_all">See all</string>
+    <string name="ijtimoiy">Ijtimoiy Fanlar</string>
+    <string name="texnika_fanlar">Texnika Fanlar</string>
+    <string name="matematika">Matematika</string>
+    <string name="ona_tili">Ona Tili</string>
+    <string name="tarix">Tarix</string>
+    <string name="your_result">Your Result</string>
+    <string name="daily">Daily</string>
+    <string name="monthly">Monthly</string>
+    <string name="statistics">Statistics</string>
 </resources>

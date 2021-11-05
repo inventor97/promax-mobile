@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.notifications.NotificationsFragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-<!--    style="@style/profile_bkg">-->
+    android:layout_height="match_parent">
 
     <ImageView
         android:layout_width="match_parent"
@@ -15,8 +13,10 @@
         android:src="@drawable/profile_bkg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/overview_title"
@@ -32,19 +32,22 @@
     <TextView
         android:id="@+id/name_profile"
         style="@style/title_bold_text"
+        android:layout_width="56dp"
+        android:layout_height="29dp"
         android:text="Anvar"
-        app:layout_constraintVertical_bias="0.08"
-        app:layout_constraintHorizontal_bias="0.13"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/overview_title" />
+        app:layout_constraintTop_toBottomOf="@+id/overview_title"
+        app:layout_constraintVertical_bias="0" />
 
     <TextView
         android:id="@+id/surename_profile"
         style="@style/title_regular_text"
         android:text="Samadov"
-        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintVertical_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/name_profile"
@@ -57,9 +60,9 @@
         android:layout_height="wrap_content"
         android:text="#ID"
         android:textColor="@color/grey"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         app:layout_constraintVertical_bias="0.005"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/surename_profile"
         app:layout_constraintStart_toStartOf="@+id/surename_profile"
@@ -69,25 +72,25 @@
         android:id="@+id/profile_id_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="№ 123423432"
         android:textColor="@color/white"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintVertical_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile_id"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="@+id/profile_id"
-        app:layout_constraintTop_toBottomOf="@+id/profile_id" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_id"
+        app:layout_constraintVertical_bias="0" />
 
     <TextView
         android:id="@+id/phone_number_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="Phone number"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/phone_number"
         android:textColor="@color/grey"
         app:layout_constraintVertical_bias="0"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/profile_id"
@@ -97,7 +100,7 @@
         android:id="@+id/phone_number_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="+998 (90) 542 45 31"
         android:textColor="@color/white"
         app:layout_constraintHorizontal_bias="0"
@@ -111,7 +114,7 @@
         android:id="@+id/adress_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/address"
         android:textColor="@color/grey"
         app:layout_constraintVertical_bias="0"
@@ -125,7 +128,7 @@
         android:id="@+id/address_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="45 st Ahmad Donish \nYunusobod Tashkent"
         android:textColor="@color/white"
         app:layout_constraintHorizontal_bias="0"
@@ -139,7 +142,7 @@
         android:id="@+id/rank_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/rank"
         android:textColor="@color/grey"
         app:layout_constraintVertical_bias="0"
@@ -153,7 +156,7 @@
         android:id="@+id/rank_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="105"
         android:textColor="@color/white"
         app:layout_constraintHorizontal_bias="0"
@@ -167,7 +170,7 @@
         android:id="@+id/last_joined_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="Joined 3 month ago"
         android:textColor="@color/white"
         app:layout_constraintVertical_bias="0"
@@ -199,6 +202,8 @@
         android:focusable="true"
         android:checkable="true"
         app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -225,7 +230,7 @@
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_bold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/edit_profile"
                 android:textColor="@color/primary_color"
                 app:layout_constraintHorizontal_bias="0.1"
@@ -244,8 +249,9 @@
         android:clickable="true"
         android:focusable="true"
         app:cardCornerRadius="15dp"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.1"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintVertical_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -273,7 +279,7 @@
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_bold"
+                android:fontFamily="@font/poppins_bold"
                 android:text="@string/ranking"
                 android:textColor="@color/primary_color"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -284,5 +290,51 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:checkable="true"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_btn_profile">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_folder_outline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                app:tint="@color/primary_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/history"
+                android:textColor="@color/primary_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,15 +5,19 @@
       <map>
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/circle_bkg_fill.xml" value="0.22407407407407406" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/circle_bkg_filll.xml" value="0.15197368421052632" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/code_confirm_bkg.xml" value="0.240625" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_backspace_outline.xml" value="0.20810810810810812" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_chevron_back_outline.xml" value="0.15197368421052632" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_edit.xml" value="0.240625" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_edit_regular.xml" value="0.240625" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_folder_outline.xml" value="0.15197368421052632" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_information_outline.xml" value="0.21388888888888888" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_language_outline.xml" value="0.21388888888888888" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_moon_outline.xml" value="0.21388888888888888" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_person_outline.xml" value="0.15197368421052632" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_trophy_outline.xml" value="0.240625" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/ic_wallet_outline.xml" value="0.21388888888888888" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/main_bkg.xml" value="0.240625" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/more_rounded_border_fill.xml" value="0.240625" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/more_rounded_border_top_fill.xml" value="0.21388888888888888" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/more_rounded_border_white.xml" value="0.240625" />
@@ -23,23 +27,26 @@
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/rounded_border_shadow_white.xml" value="0.15197368421052632" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/rounded_border_white.xml" value="0.15197368421052632" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/rounded_border_white85.xml" value="0.240625" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/drawable/view_pager_bkg.xml" value="0.240625" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/font-v26/primary_font.xml" value="0.2546875" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/font/primary_font.xml" value="0.22407407407407406" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout-v28/fragment_profile.xml" value="0.20018115942028986" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/activity_confimation_number.xml" value="0.25" />
-        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/activity_edit_profile.xml" value="0.22" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/activity_reset_pass.xml" value="0.22" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
-        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.18" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
-        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_exam.xml" value="0.25" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_exam.xml" value="0.10758196721311475" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_exam_subject.xml" value="0.33" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_exam_subject_list.xml" value="0.18" />
-        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_history.xml" value="0.39416058394160586" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_history.xml" value="0.21" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_history_list.xml" value="0.18" />
-        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
-        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_settings.xml" value="0.12" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_viewpage_1.xml" value="0.1" />
         <entry key="..\:/PC docs/MyApplication/app/src/main/res/layout/fragment_viewpage_2.xml" value="0.1" />

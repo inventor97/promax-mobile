@@ -20,12 +20,13 @@
 
     <TextView
         android:id="@+id/textView3"
-        style="@style/right_side_title"
-        android:layout_width="220dp"
+        style="@style/left_side_title"
+        android:layout_width="280dp"
         android:text="@string/restore_pass_title"
+        android:layout_marginEnd="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.1" />
@@ -35,12 +36,13 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:src="@drawable/asd"
+        android:layout_marginEnd="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.25" />
 
     <ImageButton
         android:id="@+id/edit_profile_btn_reset"
@@ -49,7 +51,7 @@
         android:background="@drawable/circle_bkg_fill"
         app:layout_constraintBottom_toBottomOf="@+id/profile_image_reset"
         app:layout_constraintEnd_toEndOf="@+id/profile_image_reset"
-        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintHorizontal_bias="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/profile_image_reset"
         app:layout_constraintVertical_bias="0.9"

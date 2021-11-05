@@ -4,231 +4,519 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.home.HomeFragment"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
-<!--    style="@style/overview_bkg">-->
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/overview_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/overview_title"
-        style="@style/dashboard_title_white"
-        android:text="@string/overview"
-        app:layout_constraintVertical_bias="0.03"
-        app:layout_constraintHorizontal_bias="0.05"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/notification_btn_overview"
-        style="@style/back_icon_mode"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:src="@drawable/ic_notifications_outline"
-        app:layout_constraintVertical_bias="1"
-        app:layout_constraintHorizontal_bias="0.95"
-        android:rotation="45"
-        app:layout_constraintBottom_toBottomOf="@+id/overview_title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/overview_title"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image_overview"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/asd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintVertical_bias="0.03"
-        app:layout_constraintStart_toStartOf="@+id/overview_title"
-        app:layout_constraintTop_toBottomOf="@+id/overview_title" />
-
-    <TextView
-        android:id="@+id/name_overview"
-        style="@style/title_bold_text"
-        android:text="Anvar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/profile_image_overview"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_image_overview"
-        app:layout_constraintVertical_bias="0" />
-
-    <TextView
-        android:id="@+id/surename_overview"
-        style="@style/title_regular_text"
-        android:text="Samadov"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/profile_image_overview"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="@+id/name_overview"
-        app:layout_constraintTop_toBottomOf="@+id/name_overview"
-        app:layout_constraintVertical_bias="0" />
-
-    <TextView
-        android:id="@+id/textView4"
-        style="@style/sub_title_text_gray"
-        android:text="@string/success"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_image_overview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toEndOf="@+id/profile_image_overview"
-        app:layout_constraintTop_toBottomOf="@+id/overview_title"
-        app:layout_constraintVertical_bias="0.03" />
-
-    <TextView
-        android:id="@+id/passed_exams_count"
-        style="@style/title_bold_text"
-        android:text="32"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_image_overview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
-        app:layout_constraintStart_toEndOf="@+id/profile_image_overview"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.03" />
-
-    <TextView
-        android:id="@+id/upoaded_exams_count"
-        style="@style/title_bold_text"
-        android:text="58"
-        app:layout_constraintBottom_toTopOf="@+id/surename_overview"
-        app:layout_constraintEnd_toEndOf="@+id/passed_exams_count"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/passed_exams_count"
-        app:layout_constraintTop_toBottomOf="@+id/passed_exams_count"
-        app:layout_constraintVertical_bias="0." />
-
-    <TextView
-        android:id="@+id/textView5"
-        style="@style/sub_title_text_gray"
-        android:text="@string/passed_exam"
-        app:layout_constraintBottom_toBottomOf="@+id/passed_exams_count"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toEndOf="@+id/passed_exams_count"
-        app:layout_constraintTop_toTopOf="@+id/passed_exams_count"
-        app:layout_constraintVertical_bias="1" />
-
-    <TextView
-        android:id="@+id/textView8"
-        style="@style/sub_title_text_gray"
-        android:text="@string/uploaded_exam"
-        app:layout_constraintBottom_toBottomOf="@+id/upoaded_exams_count"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toEndOf="@+id/upoaded_exams_count"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="1" />
-
-    <TextView
-        android:id="@+id/textView6"
-        style="@style/sub_title_text_gray"
-        android:text="@string/valet"
-        app:layout_constraintBottom_toTopOf="@+id/name_overview"
-        app:layout_constraintEnd_toEndOf="@+id/textView8"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toEndOf="@+id/profile_image_overview"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.5" />
-
-    <TextView
-        android:id="@+id/valet_amount_overview"
-        style="@style/title_bold_text"
-        android:text="15,000"
-        app:layout_constraintBottom_toBottomOf="@+id/name_overview"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0" />
-
-    <TextView
-        android:id="@+id/textView7"
-        style="@style/sub_title_text_gray"
-        android:text="@string/your_ranking"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/valet_amount_overview"
-        app:layout_constraintVertical_bias="0.2" />
-
-    <TextView
-        android:id="@+id/ranking_overview"
-        style="@style/title_bold_text"
-        android:text="103"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="@+id/valet_amount_overview"
-        app:layout_constraintHorizontal_bias="1"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.05" />
+    android:layout_width="match_parent"
+    android:background="@color/white_grey">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="250dp"
-        android:background="@drawable/more_rounded_border_white"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_bkg_color"
+        android:paddingStart="5dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/surename_overview"
-        app:layout_constraintVertical_bias="0.0">
-
-
-        <TextView
-            android:id="@+id/textView9"
-            style="@style/text"
-            android:text="@string/history"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.05"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/sperator_title"
-            android:layout_width="180dp"
-            android:layout_height="3dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/more_rounded_border_fill"
+            android:id="@+id/notification_btn_overview"
+            style="@style/back_icon_mode"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:rotation="45"
+            android:src="@drawable/ic_notifications_outline"
+            app:layout_constraintBottom_toBottomOf="@+id/surename_overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toEndOf="@+id/surename_overview"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_overview"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/asd"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name_overview"
+            style="@style/title_bold_text"
+            android:layout_marginStart="10dp"
+            android:text="Anvar"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_image_overview"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0"
-            app:layout_constraintStart_toStartOf="@+id/textView9"
-            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintStart_toEndOf="@+id/profile_image_overview"
+            app:layout_constraintTop_toTopOf="@+id/profile_image_overview"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <TextView
+            android:id="@+id/surename_overview"
+            style="@style/title_regular_text"
+            android:layout_marginStart="10dp"
+            android:text="Samadov"
+            app:layout_constraintBottom_toBottomOf="@+id/name_overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/name_overview"
+            app:layout_constraintTop_toTopOf="@+id/profile_image_overview"
+            app:layout_constraintVertical_bias="1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/title_regular_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/your_wallet"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_image_overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/profile_image_overview"
+            app:layout_constraintTop_toBottomOf="@+id/name_overview"
             app:layout_constraintVertical_bias="0" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/list"
-            android:name="com.example.myapplication.historyFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
-            app:layoutManager="LinearLayoutManager"
+        <TextView
+            android:id="@+id/wallet_amount_home"
+            style="@style/title_bold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="15,000"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sperator_title"
-            tools:context=".historyFragment"
-            tools:listitem="@layout/fragment_history">
-
-        </androidx.recyclerview.widget.RecyclerView>
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/surename_overview"
+            app:layout_constraintVertical_bias="0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/most_popular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <TextView
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_all"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toTopOf="@+id/textView5"
+                app:layout_constraintVertical_bias="0" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintVertical_bias="0"
+                app:layout_goneMarginTop="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ijtimoiy_bkg">
+
+                    <TextView
+                        style="@style/title_bold_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/random_exam"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView3"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/cardView"
+                app:layout_constraintTop_toTopOf="@+id/cardView"
+                app:layout_constraintVertical_bias="0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/matem_bkg">
+
+                    <TextView
+                        style="@style/title_bold_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/ijtimoiy"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView"
+                app:layout_constraintVertical_bias="0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/texnika_bkg">
+
+                    <TextView
+                        style="@style/title_bold_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/texnika_fanlar"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView5"
+                android:layout_width="120dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/cardView2"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3"
+                app:layout_constraintVertical_bias="0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/random_bkg">
+
+                    <TextView
+                        style="@style/title_bold_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/matematika"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/cardView3"
+                app:layout_constraintTop_toTopOf="@+id/cardView3"
+                app:layout_constraintVertical_bias="0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/til_bkg">
+
+                    <TextView
+                        style="@style/title_bold_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/ona_tili"
+                        android:textColor="@color/secondary_color"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="120dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/cardView5"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4"
+                app:layout_constraintVertical_bias="0">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/history_bkg">
+
+                    <TextView
+                        style="@style/title_bold_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:text="@string/tarix"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/statistics"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="0" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/daily_stats_btn"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/daily_stats_btn"
+                style="@style/button_fill"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/daily"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                app:layout_constraintVertical_bias="0" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/button_white_fill"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/monthly"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/daily_stats_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/daily_stats_btn"
+                app:layout_constraintTop_toTopOf="@+id/daily_stats_btn"
+                app:layout_constraintVertical_bias="0" />
+
+            <Button
+                style="@style/button_fill_secondary"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/ranking"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintTop_toTopOf="@+id/button"
+                app:layout_constraintVertical_bias="0" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_chart">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/text"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/history"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list"
+                        android:name="com.example.myapplication.historyFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layoutManager="LinearLayoutManager"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView9"
+                        tools:context=".historyFragment"
+                        tools:listitem="@layout/fragment_history">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

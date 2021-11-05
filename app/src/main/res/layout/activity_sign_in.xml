@@ -22,7 +22,6 @@
         style="@style/textfield"
         android:hint="@string/number"
         app:layout_constraintVertical_bias="0.35"
-        android:background="@drawable/rounded_border_shadow_white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +31,7 @@
         android:id="@+id/sign_in_pass"
         style="@style/textfield"
         android:hint="@string/password"
+        android:inputType="textPassword"
         app:layout_constraintVertical_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,9 +53,8 @@
         android:layout_height="wrap_content"
         android:text="@string/forgot_pass"
         android:textColor="@color/primary_color"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         app:layout_constraintVertical_bias="0.1"
-        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,15 +64,15 @@
         android:id="@+id/sign_up_option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_bold"
         android:text="@string/sign_up_in_sign_in"
         android:textColor="@color/primary_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toEndOf="@+id/fotget_pass_option"
         app:layout_constraintTop_toTopOf="@+id/fotget_pass_option"
-        app:layout_constraintVertical_bias="0"
-        app:layout_constraintHorizontal_bias="0.9"/>
+        app:layout_constraintVertical_bias="0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

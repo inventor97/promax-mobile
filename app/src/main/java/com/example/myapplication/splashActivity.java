@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -40,6 +41,7 @@ public class splashActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
@@ -50,9 +52,9 @@ public class splashActivity extends AppCompatActivity {
             pager = findViewById(R.id.liquid_pager);
             pagerAdt = new PagerAdapter(getSupportFragmentManager());
             pager.setAdapter(pagerAdt);
-            bkgImg.animate().translationY(-2500).setDuration(2000).setStartDelay(3000);
-            imgLogo.animate().translationY(2600).setDuration(2000).setStartDelay(2500);
-            textLogo.animate().translationY(2600).setDuration(2000).setStartDelay(2500);
+            bkgImg.animate().translationX(-2500).setDuration(1500).setStartDelay(2500);
+            imgLogo.animate().translationY(2600).setDuration(1500).setStartDelay(2000);
+            textLogo.animate().translationY(2600).setDuration(1500).setStartDelay(2000);
         }
     }
 
@@ -60,12 +62,7 @@ public class splashActivity extends AppCompatActivity {
 
         public PagerAdapter(@NonNull FragmentManager fm) {
             super(fm);
-
-
         }
-
-
-
         @NonNull
         @Override
         public Fragment getItem(int position) {

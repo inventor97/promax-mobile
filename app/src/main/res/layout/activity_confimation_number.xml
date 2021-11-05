@@ -4,19 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".confimation_number"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
-<!--    style="@style/confirmation_number">-->
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/confirm_number_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:layout_width="match_parent"
+    android:background="@drawable/varification_bkg">
 
     <ImageView
         android:id="@+id/back_btn_confirmation"
@@ -29,11 +18,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style="@style/back_icon_mode"/>
+        style="@style/back_icon_mode"
+        app:tint="@color/primary_color" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="220dp"
+        android:layout_width="280dp"
         style="@style/right_side_title"
         android:text="@string/confrim_restore_pass_title"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,85 +63,17 @@
         </TableRow>
     </TableLayout>
 
-    <TableLayout
-        android:id="@+id/numpad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmation_numbers_row">
-
-        <TableRow>
-            <TextView
-                android:id="@+id/one_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/one"
-                />
-            <TextView
-                android:id="@+id/two_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/two"
-                />
-            <TextView
-                android:id="@+id/three_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/three"
-                />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/four_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/four"
-                />
-            <TextView
-                android:id="@+id/five_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/five"
-                />
-            <TextView
-                android:id="@+id/six_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/six"
-                />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/seven_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/seven"
-                />
-            <TextView
-                android:id="@+id/eight_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/eight"
-                />
-            <TextView
-                android:id="@+id/nine_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/nine"
-                />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:id="@+id/blank_btn"
-                style="@style/numpad_keyboard"
-                />
-            <TextView
-                android:id="@+id/zero_btn"
-                style="@style/numpad_keyboard"
-                android:text="@string/zero"
-                />
-            <ImageView
-                android:id="@+id/backspace_img"
-                android:layout_width="60dp"
-                android:layout_height="45dp"
-                android:layout_margin="5dp"
-                android:background="@color/transparent"
-                android:src="@drawable/ic_backspace_outline"
-                style="@style/backspace_icon_mode"/>
-        </TableRow>
-    </TableLayout>
+        app:layout_constraintTop_toBottomOf="@+id/confirmation_numbers_row"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/two_factor_authentication"
+        app:lottie_repeatCount="@android:integer/config_longAnimTime" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
